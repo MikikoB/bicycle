@@ -1,0 +1,192 @@
+body{
+  max-width:1280px;
+  max-height:600px;
+  font-family:Hiragino Kaku Gothic ProN;
+  display: block;
+  margin: auto;
+  color:#383E45;
+}
+p{
+  font-size: 14.4px;
+}
+a:link, a:visited, a:active {
+  color: black;
+}
+a:hover,.menu-list img:hover{
+  color: #7B7B7B;
+  filter: invert(50%) sepia(0%) saturate(11%) hue-rotate(143deg) brightness(101%) contrast(93%);
+}
+
+.wrapper{
+  margin:auto;
+  max-width: 960px;
+}
+li{
+  list-style: none;
+}
+h2{
+  margin-top: 100px;
+  font-size: 32px;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+header{
+  max-width:960px;
+  padding:4%;
+  margin: auto;
+}
+.header-fix{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255,255,255,0.8);
+}
+.logo{
+  height:40px;
+  width:120px;
+  float: left;
+  padding-left: 50px;
+  margin:10px;
+}
+.menu-list img{
+  width: 10px;
+  height: 10px;
+}
+
+ul.ddmenu ul {
+   display: none;
+   margin: 0px;
+   padding: 0px;
+   position: absolute;
+}
+
+ul.ddmenu li:hover ul {
+   display: block;
+}
+
+.mainvisual img{
+  height:600px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+.menu{
+  float: left;
+  margin-left:15px;
+}
+.menu-list{
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 50px;
+}
+.about{
+  padding-top:80px;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.profile img{
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+  margin-right:30px;
+}
+.bicycle li{
+  display: inline-block;
+  margin-right: 17px;
+}
+.bicycle img{
+  height: 182px;
+  width:274px;
+  opacity:1;
+  transition:0.3s;
+}
+.hover1, .hover2, .hover3{
+  position: relative;
+}
+.hover1:hover .bicycle1, .hover2:hover .bicycle2, .hover3:hover .bicycle3{
+  opacity:0.3;
+}
+
+.caption1,.caption2,.caption3{
+  font-size: 20px;
+  opacity: 0;
+  text-align: center;
+  position: absolute;
+  top:80px;
+  left:80px;
+}
+
+.hover1:hover .caption1, .hover2:hover .caption2, .hover3:hover .caption3{
+  opacity: 1;
+  transition:0.3s;
+  color: black;
+}
+
+.bicycle {
+  margin:　auto;
+  display: block;
+}
+
+.bicycle contents{
+  display: block;
+  text-align: center;
+}
+.bicycle h3{
+  text-align: center;
+}
+.bicycle p{
+  text-align: center;
+}
+
+
+footer{
+  display: block;
+  margin-top: 110px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 8px;
+  color: #383E45;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  body{
+    max-width:600px;
+    max-height:1280px;
+  }
+
+  .mainvisual img{
+    max-height:100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .bicycle p{
+    margin-bottom:80px;
+  }
+
+  .bicycle img{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+  }
+  .caption1, .caption2, .caption3{
+    z-index: 30;
+    opacity: 0;
+    text-align: center;
+    position: absolute;
+    top:150px;
+    left:200px;
+  }
