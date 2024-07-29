@@ -54,7 +54,10 @@ header{
   display: flex;
   margin-right: 50px;
 }
-
+ul.ddmenu ul li {
+   width: 135px;
+   background-color: rgba(255, 255, 255, 0.8);
+}
 ul.ddmenu ul {
    display: none;
    margin: 0px;
